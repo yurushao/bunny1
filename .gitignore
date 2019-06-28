@@ -1,0 +1,4 @@
+*.pyc
+build*
+dist
+bunny1.egg-info/

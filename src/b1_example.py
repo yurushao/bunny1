@@ -6,7 +6,7 @@ An example bunny1 server with some common commands that you might want to use.
 """
 __version__ = "1.1"
 
-import urlparse
+import urllib.parse as urlparse
 import subprocess
 
 import bunny1
@@ -146,7 +146,7 @@ class ExampleCommands(bunny1.Bunny1Commands):
             return PRE(eval(arg))
         except Content:
             raise
-        except Exception, e:
+        except Exception as e:
             return PRE("<span style='color: red;'>" + escape(str(e)) + "</span>")
 
     def time(self, arg):
