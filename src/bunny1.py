@@ -687,7 +687,6 @@ def main(b1, b1op=Bunny1OptionParser()):
                 # in the case of a redirect to distinguish from content output
                 print("\033[33m%s:\033[0m %s" % (redir.__class__.__name__, redir))
         else:
-
             if options.port:
                 port = int(options.port)
             else:

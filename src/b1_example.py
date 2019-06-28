@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 __author__ = "ccheever"
 __doc__ = """
@@ -10,10 +10,10 @@ import urllib.parse as urlparse
 import subprocess
 
 import bunny1
-from bunny1 import cherrypy
+import cherrypy
 from bunny1 import Content
-from bunny1 import q
-from bunny1 import qp
+from urllib.parse import quote as q
+from urllib.parse import quote_plus as qp
 from bunny1 import expose
 from bunny1 import dont_expose
 from bunny1 import escape

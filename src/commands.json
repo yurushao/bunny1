@@ -1,0 +1,17 @@
+[
+    {
+        "type": "regex",
+        "content": "D123456",
+        "url_template": "https://abc.def/%s"
+    },
+    {
+        "type": "regex",
+        "content": "JIRA-1234",
+        "url_template": "https://jira.abc/%s"
+    },
+    {
+        "type": "cmd",
+        "method": "g",
+        "url_template": "https://google.com/%s"
+    }
+]
